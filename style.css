@@ -13,3 +13,8 @@
   color: #fff;
   background: #f15d43;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #262626;
+}
