@@ -21,3 +21,9 @@
   color: #000000;
   background-color: #f15d43;
 }
+
+.bg-orange {
+  background: #f15d43;
+  max-width: 100%;
+  height: 100%;
+}
