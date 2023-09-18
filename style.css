@@ -11,6 +11,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+#navbar .nav-link.active {
+  background: #f15d43;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .current {
   border: #f15d43 1px solid;
   border-radius: 5px;
