@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,20 +21,35 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+
+    <!-- Permanent Marker -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&family=Permanent+Marker&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Yantramanav -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&family=Permanent+Marker&family=Roboto:wght@300&family=Yantramanav:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./respo.css" />
 
     <title>CarCast</title>
   </head>
   <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-sm sticky-top bg-white">
+    <nav id="navbar" class="navbar navbar-expand-md sticky-top bg-white">
       <div class="container-fluid container justify-content-between">
         <div>
           <a class="navbar-brand" href="index.html"
-            ><img
-              src="./images/CarCast 2-White.png"
-              style="width: 300px"
-              alt="CarCast"
+            ><img src="./images/CarCast 2-White.png" width="250" alt="CarCast"
           /></a>
         </div>
         <div>
@@ -43,14 +62,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
+            <ul class="navbar-nav ms-auto">
+              <li>
                 <a class="nav-link current" href="index.html">Home</a>
               </li>
-              <li class="nav-item">
+              <li>
                 <a class="nav-link" href="#about">About</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -76,8 +95,17 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+              <li>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+              <li>
+                <a
+                  class="nav-link"
+                  href="#log-in"
+                  data-bs-toggle="modal"
+                  data-bs-target="#log-in"
+                  >Log in</a
+                >
               </li>
             </ul>
           </div>
@@ -153,25 +181,25 @@
       <div class="container">
         <div id="FS" class="row mb-3">
           <div class="text-center text-light pt-4">
-            <h2>Featured Sales!</h2>
+            <h2 id="featured-head">Hot Items!</h2>
           </div>
         </div>
 
         <!-- 1st Card -->
         <div class="row">
           <div class="col-md-4">
-            <div class="card">
+            <div class="card featured">
               <img
                 src="./images/Hotwheels/hotwheels3.png"
                 alt="Work1"
                 class="card-img-top"
               />
               <div class="card-body">
-                <h4 class="card-title">This is card title</h4>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Omnis tempora sequi mollitia illo ut nihil!
-                </p>
+                <h4 class="card-title primary-text fw-bold">
+                  McLaren P1 2020 Model
+                </h4>
+                <p class="card-text">Price: P450</p>
+                <p class="card-text">Condition: Sealed (Brand-New)</p>
                 <a href="#" class="btn btn-info">View</a>
               </div>
             </div>
@@ -179,18 +207,18 @@
 
           <!-- 2nd Card -->
           <div class="col-md-4">
-            <div class="card">
+            <div class="card featured">
               <img
                 src="./images/Hotwheels/hotwheels5.png"
                 alt="Work1"
                 class="card-img-top"
               />
               <div class="card-body">
-                <h4 class="card-title">This is card title</h4>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Omnis tempora sequi mollitia illo ut nihil!
-                </p>
+                <h4 class="card-title primary-text fw-bold">
+                  Lamborghini Centenerio
+                </h4>
+                <p class="card-text">Price: P450</p>
+                <p class="card-text">Condition: Sealed (Brand-New)</p>
                 <a href="#" class="btn btn-info">View</a>
               </div>
             </div>
@@ -198,18 +226,18 @@
 
           <!-- 3rd Card -->
           <div class="col-md-4">
-            <div class="card">
+            <div class="card featured">
               <img
                 src="./images/Hotwheels/hotwheels8.png"
                 alt="Work1"
                 class="card-img-top"
               />
               <div class="card-body">
-                <h4 class="card-title">This is card title</h4>
-                <p class="card-text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Omnis tempora sequi mollitia illo ut nihil!
-                </p>
+                <h4 class="card-title primary-text fw-bold">
+                  Chevrolet Impala SS
+                </h4>
+                <p class="card-text">Price: P450</p>
+                <p class="card-text">Condition: Sealed (Brand-New)</p>
                 <a href="#" class="btn btn-info">View</a>
               </div>
             </div>
@@ -219,11 +247,11 @@
     </section>
 
     <!-- About Us -->
-    <section id="about" class="">
+    <section id="about" class="about">
       <div class="container">
         <div class="row">
           <div class="col-md-8 align-self-center">
-            <h2>About Us</h2>
+            <h2 class="primary-text">About Us</h2>
             <h6>What We Do?</h6>
             <p>
               CarCast is dedicated to providing a diverse selection of
@@ -237,8 +265,13 @@
             </p>
             <a href="#" class="btn btn-info">Learn More</a>
           </div>
-          <div class="col-md-4 align-self-center">
-            <img src="./images/Collection.png" alt="About Image" />
+          <div class="col-md-4 align-self-center collection" id="collection">
+            <img
+              src="./images/Collection.png"
+              alt="About Image"
+              class="img-fluid"
+              style="width: 100%"
+            />
           </div>
         </div>
       </div>
@@ -247,42 +280,22 @@
     <!-- Review Sections -->
     <section id="Reviews" class="p-5 bg-black">
       <div class="container">
-        <h2 class="text-center text-white mb-3">Customer Reviews</h2>
+        <h2 id="featured-head" class="text-center text-white mb-3">
+          Customer Reviews
+        </h2>
         <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
+          <div class="col-md-6 col-lg-6">
+            <div class="card bg-light h-100">
               <div class="card-body text-center">
                 <img
                   src="https://randomuser.me/api/portraits/men/11.jpg"
                   alt="Random men picture"
                   class="rounded-circle mb-3"
                 />
-                <h3 class="card-title mb-3">Dwayne Piloton</h3>
+                <h3 class="card-title mb-3 primary-text">Dwayne Piloton</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
-                </p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-              </div>
-            </div>
-          </div>
-          <!-- Second Person -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/11.jpg"
-                  alt="Random women picture"
-                  class="rounded-circle mb-3"
-                />
-                <h3 class="card-title mb-3">Cobs Neri</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                  Carcust offers an impressive selection of die-cast cars,
+                  making it a must-visit site for collectors.
                 </p>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -292,41 +305,19 @@
               </div>
             </div>
           </div>
-          <!-- Third Person -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
+          <!-- Second Person -->
+          <div class="col-md-6 col-lg-6">
+            <div class="card bg-light h-100">
               <div class="card-body text-center">
                 <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
-                  alt="Random men picture"
-                  class="rounded-circle mb-3"
-                />
-                <h3 class="card-title mb-3">Lorenz Legara</h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
-                </p>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-          <!-- Fourth Person -->
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/12.jpg"
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
                   alt="Random women picture"
                   class="rounded-circle mb-3"
                 />
-                <h3 class="card-title mb-3">Nathan Vincent</h3>
+                <h3 class="card-title mb-3 primary-text">Cobs Neri</h3>
                 <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Assumenda accusamus nobis sed cupiditate iusto? Quibusdam.
+                  Carcust makes die-cast car buying a breeze with its
+                  user-friendly interface and seamless checkout process.
                 </p>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
@@ -344,27 +335,27 @@
     <footer id="footer" class="pt-3">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center">
+          <div class="col-md-6 text-center pb-3">
             <img
               src="./images/CarCast Logo 2.png"
               alt="CarCust Logo 2"
               width="400px"
             />
           </div>
-          <div class="col-md-6 text-center">
-            <h3>Socials</h3>
-            <ul class="list-unstyled socials">
-              <li class="mb-2">
+          <div class="col-md-6 text-center pt-4">
+            <h3 id="featured-head">Socials</h3>
+            <ul class="list-unstyled justify-content-center d-flex">
+              <li class="mb-2 p-4">
                 <a href="http://facebook.com" target="_blank"
                   ><i class="fab fa-facebook fa-3x text-dark"></i
                 ></a>
               </li>
-              <li class="mb-2">
+              <li class="mb-2 p-4">
                 <a href="http://instagram.com" target="_blank"
                   ><i class="fab fa-instagram fa-3x text-dark"></i
                 ></a>
               </li>
-              <li class="mb-2">
+              <li class="mb-2 p-4">
                 <a href="http://twitter.com" target="_blank"
                   ><i class="fab fa-twitter fa-3x text-dark"></i
                 ></a>
@@ -377,7 +368,7 @@
       <div class="bg-orange pt-3 pb-1">
         <div class="container">
           <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-md-12 text-center text-white">
               <p>Copyright 2023 | RacerManzur | CarCust</p>
             </div>
           </div>
@@ -385,6 +376,77 @@
       </div>
     </footer>
 
+    <!-- Modal Body -->
+    <div class="modal fade" id="log-in" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Log In</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <div class="modal-body">
+              <form action="process.php" class="pt-3 text-start">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Username</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your Username"
+                    class="form-control"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="phone" class="form-label">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your Password"
+                    class="form-control"
+                  />
+                </div>
+                <div class="password">
+                  <a class="nav-link" href="#">Forgot Password?</a>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn" data-bs-dismiss="modal">
+              Log in
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <script>
+      $("#navbar a, .btn").on("click", function (e) {
+        if (this.hash !== "") {
+          e.preventDefault();
+
+          const hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top - 100,
+            },
+            800
+          );
+        }
+      });
+    </script> -->
     <!-- link JavaScript-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"

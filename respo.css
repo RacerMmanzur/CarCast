@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .collection img {
+    height: 45vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .collection img {
+    display: none;
+  }
+}
