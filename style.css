@@ -62,6 +62,11 @@ Featured {
   font-size: 50px;
 }
 
+#featured {
+  background: url(./images/pexels-jacob-moore-14411404.jpg) no-repeat center
+    center/cover;
+}
+
 .primary-text {
   font-family: "Yantramanav", sans-serif;
 }
@@ -74,4 +79,9 @@ Featured {
 
 .password a:hover {
   color: #b5b5b5;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  z-index: 10;
 }
