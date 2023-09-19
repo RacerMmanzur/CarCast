@@ -42,11 +42,6 @@ body {
   height: 100%;
 }
 
-Featured {
-  background: url(./images/Two\ sides\ of\ the\ freeway.jfif) no-repeat center
-    center/cover;
-}
-
 #contact {
   background: url(./images/Download\ Abstract\ grunge\ black\ orange\ background\ for\ free.jfif)
     no-repeat center center/cover;
@@ -84,6 +79,7 @@ Featured {
 .pagination a {
   color: #000000;
 }
+
 .pagination a:hover {
   color: #f15d43;
 }
