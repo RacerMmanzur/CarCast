@@ -71,7 +71,7 @@ body {
   color: #b5b5b5;
 }
 
-.card:hover {
+#card:hover {
   transform: scale(1.1);
   z-index: 10;
 }
